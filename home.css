@@ -1,0 +1,179 @@
+
+body {
+	background-color: #f7f7f7;
+}
+
+h1 {
+	margin: 0px;
+	margin-top: 30px;
+}
+
+h3 {
+	margin: 0px;
+	font-size: 36px;
+}
+
+a {
+	text-decoration: none;
+}
+
+.container {
+	width: 80%;
+	margin: 0 auto;
+	min-height:100%;
+	position:relative;
+}
+
+.header {
+	font-family: helvetica;
+	padding: 0px;
+	padding-bottom: 10px;
+	width: 100%
+	text-align: left;
+	font-size: 60px;
+	position: relative;
+	right: 50px;
+}
+
+.grid {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+
+.rice-box {
+	font-family: verdana;
+	font-size: 24px;
+	padding: 25px;
+	margin: 10px;
+	width: 230px;
+	height: 230px;
+
+	border: 8px solid #004080;
+	color: #004080;
+	background-color: #cce5ff;
+}
+
+.rice-box > a:visited {
+	color: #004080;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.evernote-box {
+	font-family: verdana;
+	font-size: 24px;
+	padding: 25px;
+	margin: 10px;
+	width: 230px;
+	height: 230px;
+
+	border: 8px solid #27a553;
+	color: #27a553;
+	background-color: #eafaf0;
+}
+
+.evernote-box > a:visited {
+	color: #27a553;
+}
+
+.runner-box {
+	font-family: verdana;
+	font-size: 24px;
+	padding: 25px;
+	margin: 10px;
+	width: 230px;
+	height: 230px;
+
+	border: 8px solid #fc4c02;
+	color: #fc4c02;
+	background-color: #ffede6;
+}
+
+.runner-box > a:visited {
+	color: #fc4c02;
+}
+
+.coder-box {
+	font-family: verdana;
+	font-size: 24px;
+	padding: 25px;
+	margin: 10px;
+	width: 230px;
+	height: 230px;
+
+	border: 8px solid #672fd0;
+	color: #672fd0;
+	background-color: #e1d5f6;
+}
+
+.coder-box > a:visited {
+	color: #672fd0;
+}
+
+.reader-box {
+	font-family: verdana;
+	font-size: 24px;
+	padding: 25px;
+	margin: 10px;
+	width: 230px;
+	height: 230px;
+
+	border: 8px solid #b33c00;
+	color: #b33c00;
+	background-color: #ffddcc;
+}
+
+.reader-box > a:visited {
+	color: #b33c00;
+}
+
+.grid-box {
+	font-family: verdana;
+	font-size: 24px;
+	padding: 25px;
+	margin: 10px;
+	width: 230px;
+	height: 230px;
+
+	border: 8px solid black;
+	color: black;
+	background-color: #e6e6e6;
+}
+
+.grid-box > a:visited {
+	color: black;
+}
+
+.footer {
+	left: 0px;
+	right: 0px;
+	top: 0px;
+	margin-top: 100px;
+	padding: 20px
+
+	width: 100%;
+	text-align: center;
+	font-family: verdana;
+	font-size: 14px;
+}
+
+
+@media (max-width: 768px) {
+	.grid {
+		justify-content: center;
+	}
+
+	.container {
+		width: 95%;
+	}
+
+	.header {
+		font-size: 40px;
+		right: 0px;
+	}
+}
