@@ -23,6 +23,15 @@ p {
 	font-size: 24px;
 }
 
+a {
+	text-decoration: none;
+	color: black;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
 ul {
 	list-style-type: square;
 }
@@ -31,11 +40,15 @@ ul {
 	font-family: helvetica;
 	padding: 0px;
 	padding-bottom: 10px;
-	width: 100%
+	width: 100%;
 	text-align: left;
 	font-size: 40px;
 	border-bottom: 2px solid black;
 	margin-bottom: 10px;
+}
+
+.header a {
+	color: #004080;
 }
 
 .grid {
@@ -51,6 +64,5 @@ ul {
 	font-size: 24px;
 	padding: 10px;
 	margin: 10px;
-
 	color: black;
 }

@@ -43,6 +43,14 @@ a {
 	align-items: flex-start;
 }
 
+.block-link > a {
+	cursor: pointer;
+}
+
+.hover-underline:hover {
+	text-decoration: underline;
+}
+
 .rice-box {
 	font-family: verdana;
 	font-size: 24px;
@@ -50,19 +58,18 @@ a {
 	margin: 10px;
 	width: 230px;
 	height: 230px;
+	/*display: block;*/
 
 	border: 8px solid #004080;
 	color: #004080;
 	background-color: #cce5ff;
+
 }
 
-.rice-box > a:visited {
+.rice-box > a:link, .rice-box > a:visited {
 	color: #004080;
 }
 
-a:hover {
-	text-decoration: underline;
-}
 
 .evernote-box {
 	font-family: verdana;
@@ -81,6 +88,7 @@ a:hover {
 	color: #27a553;
 }
 
+
 .runner-box {
 	font-family: verdana;
 	font-size: 24px;
@@ -94,7 +102,7 @@ a:hover {
 	background-color: #ffede6;
 }
 
-.runner-box > a:visited {
+.runner-box > a:visited, .runner-box > a:link {
 	color: #fc4c02;
 }
 
@@ -111,7 +119,7 @@ a:hover {
 	background-color: #e1d5f6;
 }
 
-.coder-box > a:visited {
+.coder-box > a:visited, .coder-box > a:link {
 	color: #672fd0;
 }
 
@@ -128,7 +136,7 @@ a:hover {
 	background-color: #ffddcc;
 }
 
-.reader-box > a:visited {
+.reader-box > a:visited, .reader-box > a:link {
 	color: #b33c00;
 }
 
@@ -145,8 +153,12 @@ a:hover {
 	background-color: #e6e6e6;
 }
 
-.grid-box > a:visited {
+.grid-box > a:visited, .grid-box > a:link {
 	color: black;
+}
+
+.grid-box > a:hover {
+	font-weight: bold;
 }
 
 .footer {
@@ -163,7 +175,7 @@ a:hover {
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
 	.grid {
 		justify-content: center;
 	}
