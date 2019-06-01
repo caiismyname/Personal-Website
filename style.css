@@ -17,18 +17,18 @@ a {
   text-decoration: none;
   color: black;
 }
+
 .list-group-item {
   background-color: #f7f7f7;
   font-size:1.2em;
 }
 
-.link-list {
+.indent {
   padding-left: 5%;
 }
 
-
 @media (max-width: 1000px) {
-  .link-list {
+  .indent {
     padding-left: 1%;
   }
 }
