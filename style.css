@@ -27,12 +27,17 @@ a {
   padding-left: 5%;
 }
 
-.right-indent {
-  padding-right: 5%;
-}
-
 @media (max-width: 1000px) {
   .indent {
     padding-left: 1%;
+  }
+
+  h1 {
+    font-size: 3.5em;
+  }
+
+  .list-group {
+    /* So photo doesn't stick to bottom of the list group on mobile */
+    padding-bottom: 20px; 
   }
 }
