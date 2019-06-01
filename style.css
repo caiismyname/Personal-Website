@@ -13,8 +13,9 @@ p {
   font-size:1.2em;
 }
 
-p a {
+a {
   text-decoration: none;
+  color: black;
 }
 .list-group-item {
   background-color: #f7f7f7;
