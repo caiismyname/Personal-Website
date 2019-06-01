@@ -27,6 +27,10 @@ a {
   padding-left: 5%;
 }
 
+.right-indent {
+  padding-right: 5%;
+}
+
 @media (max-width: 1000px) {
   .indent {
     padding-left: 1%;
