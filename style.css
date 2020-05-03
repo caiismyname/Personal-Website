@@ -27,6 +27,23 @@ a {
   padding-left: 5%;
 }
 
+.blog-post-show { 
+  display: block;
+}
+
+.blog-post-hide {
+  display: none;
+}
+
+.blog-table-of-contents-entry {
+  cursor: grab;
+  text-decoration: underline;
+}
+
+.blog-table-of-contents-entry-selected {
+  font-weight: bold;
+}
+
 @media (max-width: 1000px) {
   .indent {
     padding-left: 1%;
