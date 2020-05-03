@@ -11,10 +11,11 @@ Formatting:
     - The first line will be used as the title of the post (for table-of-contents purposes)
     - The second line should always contain the date in "month.day.year" format. Articles with a date in the future
       won't be "published" until that date.
+    - There must be an `index.txt` file within the `blog_posts` directory that contains the name of each .md file, one per line
+        - This is because the original idea of inspecting the directory itself doesn't work on github hosted sites.
 */
 
 
-const filenames = [];
 const posts = [];
 const promises = [];
 const converter = new showdown.Converter(); // markdown --> HTML converter
@@ -25,13 +26,12 @@ function cleanString(input) {
 }
 
 $.ajax({
-    url: "./blog_posts/",
+    url: "/blog_posts/index.txt",
+    dataType: "text",
     success: function(data) {
-       $(data).find("li > a").each(function() {
-            filenames.push($(this).attr("href"));
-       });
+        const filenames = data.split("\n").map(fileName => cleanString(fileName));
 
-       filenames.forEach(file => {
+        filenames.forEach(file => {
             if (file.split('.')[file.split('.').length - 1] !== "md") {
                 return;    
             }
