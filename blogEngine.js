@@ -20,7 +20,6 @@ const promises = [];
 const converter = new showdown.Converter(); // markdown --> HTML converter
 
 function cleanString(input) {
-    console.log(input);
     // First replace removes markdown characters, second removes leading/trailing whitepsace
     return (input.replace(/[\_\*\#]/gi, "").replace(/^\s+|\s+$/g, ""));
 }
