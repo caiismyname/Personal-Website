@@ -1,11 +1,13 @@
-## **Leveraging CS for APM**
+# **Leveraging CS for APM**
 5.2.2020
 
 _Read it on LinkedIn_
 * [_Introduction_](https://www.linkedin.com/posts/caiismyname_apm-productmanagement-productmanager-activity-6661405134708363265-YtH5)
 * [_You have to love what you’re building_](https://www.linkedin.com/feed/update/urn:li:activity:6661976178397638656/)
+* [_Side Projects_](https://www.linkedin.com/posts/caiismyname_productmanagement-studentsoflinkedin-apm-activity-6662774073812152320-5yl8)
+* [_Work with the opprtunity you have_](https://www.linkedin.com/in/caiismyname/)
 
-### Introduction
+## Introduction
 I’ve been thinking about my growth as an APM at Yahoo, especially as someone who had absolutely zero PM experience coming into the job. In the following posts, I wanted to share three of the most important ideas that set up my CS → APM transition.
 
 * You have to ❤️ what you’re building -- coding chops are great, but being successful in an APM role entails crafting a compelling narrative around your product and story.
@@ -13,7 +15,7 @@ I’ve been thinking about my growth as an APM at Yahoo, especially as someone w
 * Work with the opportunities you have -- there’ll be plenty of time for TAM, roadmaps, and gaudy OKRs, but when you’re starting out, the more important thing is just to start ▶️.
 
 
-### You have to love what you’re building
+## You have to love what you’re building
 One of the biggest pitfalls I see when interviewing candidates is that they don’t have a compelling, genuine moment where they “discovered” PM. It doesn’t have to be grandiose -- my moment was realizing there were more interesting questions to ask beyond specifications of a class project -- but it has to be genuine.
 
 Think hard 🧠 about why you want to become an APM. Is there a specific problem you can solve? Do you have an insatiable curiosity and a never-ending waterfall of ideas? There are no wrong answers as long as you have an answer that’s specific to you.
@@ -21,7 +23,7 @@ Think hard 🧠 about why you want to become an APM. Is there a specific problem
 Don’t be shy about what’s driving you to the role; proudly share it even if an interviewer doesn’t ask. Skills and experiences can be learned on the job, but a true passion and love for a product has to be part of who you are.
 
 
-### Side Projects
+## Side Projects
 The best way to show your potential as an APM -- especially without a prior PM internship -- is through side projects. Side projects, when selected carefully, highlight many desirable traits in a potential APM:
 
 * 📱Product sense -- fundamentally, did you build a good, compelling product that people could use and love?
@@ -31,7 +33,7 @@ The best way to show your potential as an APM -- especially without a prior PM i
 No project is too small for a side project. Focus on building something you would use and you would be proud of, see it through to completion, and the rest will take care of itself.
 
 
-### Work with the opportunity you have 
+## Work with the opportunity you have 
 I spent the first three years of college doing nothing but schoolwork. I knew in the back of my head that if I wanted to land an APM role, I needed something to prove it, but nothing ever felt right.
 
 🚫 The idea wasn’t big enough.
