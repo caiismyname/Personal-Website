@@ -29,16 +29,16 @@ $.ajax({
     url: "/blog_posts/index.txt",
     dataType: "text",
     success: function(data) {
-        const filenames = data.split("\n").map(fileName => cleanString(fileName));
+        const fileNames = data.split("\n").map(fileName => cleanString(fileName));
 
-        filenames.forEach(file => {
-            if (file.split('.')[file.split('.').length - 1] !== "md") {
-                return;    
+        fileNames.forEach(file => {
+            if (file === "") {
+                return;
             }
 
             const promise = new Promise(function (resolve, reject) {
                 $.ajax({
-                    url: ("./blog_posts/" + file),
+                    url: ("./blog_posts/" + file + ".md"),
                     dataType: "text",
                     success: function(data) {
                         const title = cleanString(data.split('\n')[0]);
@@ -74,13 +74,19 @@ $.ajax({
 
                             $(".blog-table-of-contents-entry-selected").removeClass("blog-table-of-contents-entry-selected");
                             $(tableOfContentsEntry).addClass("blog-table-of-contents-entry-selected");
+
+                            setURL(file);
                         });
 
                         // Append the main content immediately since they all default to hidden
                         $("#mainContents").append(mainContentDiv);
 
-                        posts.push({date: date, tocEntry: tableOfContentsEntry});
+                        posts.push({date: date, tocEntry: tableOfContentsEntry, fileName: file});
                         resolve();
+                    },
+                    error: function(xhr, textStatus, errorThrown) {
+                        console.log(file + " | " + errorThrown);
+                        reject();
                     }
                 });
             });
@@ -94,6 +100,24 @@ $.ajax({
         );        
     }
 });
+
+function setURL(postName) {
+    const urlParams = new URLSearchParams(window.location.search);
+    const baseURL = window.location.href.split("?")[0];
+    urlParams.set("post", postName);
+    const newURL = baseURL + "?" + urlParams.toString();
+
+    history.replaceState('', '', newURL);
+}
+
+function getCurrentPostFromURL() {
+    const urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.has("post")) {
+        return (urlParams.get("post"));
+    } else {
+        return (null);
+    }
+}
 
 function sortAndInjectTOC() {
      // Sort latest --> earliest so TOC is in order (most recent at top)
@@ -109,5 +133,14 @@ function sortAndInjectTOC() {
         $("#tableOfContents").append(post.tocEntry);
     })
 
-    $(posts[0].tocEntry).click(); // Show the latest post by default
+    // If a post is specified, show it, otherwise default to the latest post.
+    // Note that a post is shown by calling `.click()` on it's `.tocEntry` stored in the object in the global `posts` array
+    // The onClicker handler handles everything needed to correctly "show" the post
+    const postToShow = getCurrentPostFromURL();
+    if (postToShow) {
+        const post = posts.find(p => p.fileName === postToShow);
+        $(post.tocEntry).click();
+    } else {
+        $(posts[0].tocEntry).click();
+    }
 }
