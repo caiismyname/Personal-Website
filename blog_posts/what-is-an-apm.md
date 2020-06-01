@@ -17,7 +17,7 @@ _Read it on LinkedIn_
 
 ## An APM is a new grad
 
-Marissa Meyer started the original APM program as a way to create her own PM talent (comparatively easy) instead of trying to find and hire pre-made PMs (hard).
+Marissa Mayer started the original APM program as a way to create her own PM talent (comparatively easy) instead of trying to find and hire pre-made PMs (hard).
 
 You may meet APMs that hadn’t considered a product career until fairly late on (🙋‍♂️I’m one of them). They’ll have been focused on engineering, design, marketing, data science, or fields that aren’t even in the realm of a traditional tech company’s purview.
 
@@ -31,8 +31,7 @@ I’ll leave you with Marrisa’s original charter for the APMs:
 
 >  “I wanna bet that I can hire new people right out of school and train them to be great product managers at Google faster than you can hire the people you prefer who are more experienced and senior.”
 
----
-An oldie but a goodie: [https://www.wired.com/2012/07/marissas-secret-weapon-for-recruiting-new-yahoo-talent/](https://www.wired.com/2012/07/marissas-secret-weapon-for-recruiting-new-yahoo-talent/)
+_An oldie but a goodie: [https://www.wired.com/2012/07/marissas-secret-weapon-for-recruiting-new-yahoo-talent/](https://www.wired.com/2012/07/marissas-secret-weapon-for-recruiting-new-yahoo-talent/)_
 
 ## An APM is an investment
 
@@ -49,7 +48,7 @@ A good APM should come out of the program a good PM.
 There is no doubt in my mind that the single most important aspect of an APM program is the support each APM is given. A strong, well-developed APM program that is built explicitly for its APM’s growth is one of the most valuable things a nascent PM can experience, regardless what company it’s at (though I’m partial to [Yahoo’s](https://yahooapms.com) 😀).
 
 
-### APM is just another job
+## APM is just another job
 
 There’s a tendency to exalt the APM title beyond what’s useful. There will always be more capable APM candidates than there are positions, and while there’s no denying that programs are valuable, it’s crucial that you view it as a means and not an end.
 
