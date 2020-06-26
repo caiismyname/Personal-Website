@@ -40,6 +40,6 @@ for heading in headings:
 
 # Save formatted md in `blog_posts` dir
 formatedPostContents = boldedTitle + "\n\n" + date + "\n\n" + linkedinLinks + "\n\n" + contents.replace(titleText, "").strip()
-newPost = open("newpost.md", "w")
+newPost = open(title + ".md", "w")
 newPost.write(formatedPostContents)
 newPost.close()
