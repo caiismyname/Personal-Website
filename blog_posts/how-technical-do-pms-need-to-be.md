@@ -1,5 +1,4 @@
 # **How technical do PMs need to be?**
-
 6.26.2020
 
 _Read it on LinkedIn:_

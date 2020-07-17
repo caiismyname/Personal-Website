@@ -39,7 +39,8 @@ for heading in headings:
     linkedinLinks += "- [_" + heading + "_]()\n"
 
 # Save formatted md in `blog_posts` dir
-formatedPostContents = boldedTitle + "\n\n" + date + "\n\n" + linkedinLinks + "\n\n" + contents.replace(titleText, "").strip()
+# blogEngine.js formatting requires title on firstline, date on second
+formatedPostContents = boldedTitle + "\n" + date + "\n\n" + linkedinLinks + "\n\n" + contents.replace(titleText, "").strip()
 newPost = open(title + ".md", "w")
 newPost.write(formatedPostContents)
 newPost.close()
